@@ -1,0 +1,1 @@
+OfflineUser.objects.filter(investors__offers__property_obj=prop)
