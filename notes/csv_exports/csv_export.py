@@ -54,3 +54,4 @@ with open('offers_export2.csv', 'wb') as csvfile:
             smart_str(o.investor.user_profiles.first().get_expected_12mo_cre_investment_amt_display()),
         ])
 
+

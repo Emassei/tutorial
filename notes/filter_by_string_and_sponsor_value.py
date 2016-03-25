@@ -1,0 +1,1 @@
+inv = Investor.objects.filter(name__contains='x ', offers__property_obj__sponsor__title__icontains='encore')
