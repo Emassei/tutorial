@@ -4,20 +4,22 @@ from datetime import datetime
 from properties.utils import format_amount
 from properties.models import Offer, Property
 
-with open('trion_offline_users.csv', 'wb') as csvfile:
+with open('hoyt-import.csv', 'wb') as csvfile:
     writer = csv.writer(csvfile)
     writer.writerow([
         smart_str(u"Email"),
         smart_str(u"First Name"),
         smart_str(u"Last Name"),
+        smart_str(u"Entity"),
     ])
-    spon = Sponsor.objects.get(slug='trion-properties')
-    online_users = spon.privateportal.offline_users.all()
+    guys = User.objects.filter(user_profile__investors__offers__stage__gt=5,
+                               user_profile__private_portal__isnull=True).distinct()
 
-    for o in online_users:
+    for o in guys:
         writer.writerow([
             smart_str(o.email),
             smart_str(o.first_name),
-            smart_str(o.last_name)
+            smart_str(o.last_name),
+            smart_str(o.user_profile.investors.first()),
         ])
 

@@ -4,20 +4,23 @@ from datetime import datetime
 from properties.utils import format_amount
 from properties.models import Offer, Property
 
-with open('trion_online_users.csv', 'wb') as csvfile:
+with open('trion-properties.csv', 'wb') as csvfile:
     writer = csv.writer(csvfile)
     writer.writerow([
         smart_str(u"Email"),
         smart_str(u"First Name"),
         smart_str(u"Last Name"),
+        smart_str(u"Entity"),
+        smart_str(u"Has Registered"),
     ])
-    online_users = Users.privateportal.user_profiles.all()
+    all_users = UserProfile.objects.filter(private_portal__sponsor__slug="trion-properties")
 
-    for o in online_users:
+
+    for o in all_users:
         writer.writerow([
             smart_str(o.user.email),
             smart_str(o.user.first_name),
             smart_str(o.user.last_name),
+            smart_str(o.investors.first()),
+            smart_str(o.is_online),
         ])
-
-
