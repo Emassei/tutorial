@@ -1,0 +1,19 @@
+Ditto
+
+1. I would need you to create some CNAMES:
+
+CNAME: invest.TBD.com VALUE: invest-TBD-com-1350454057.us-west-1.elb.amazonaws.com
+CNAME: invest-email.TBD.com VALUE: u753391.wl142.sendgrid.net
+CNAME: s1._domainkey.TBD.com VALUE: s1.domainkey.u753391.wl142.sendgrid.net
+CNAME: s2._domainkey.TBD.com VALUE: s2.domainkey.u753391.wl142.sendgrid.net
+CNAME: 43dc7325eed80586b3d96ef02c5c89fd.invest.TBD.com VALUE: 807311492d2af53f8ee9f89a1da99c4768862f7b.comodoca.com
+
+2. create a txt record with the value:
+
+v=spf1 include:sendgrid.net ~all
+
+
+Let me know if you have any questions.
+
+Thank you,
+
