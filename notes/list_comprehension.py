@@ -28,3 +28,5 @@ sum(o.amount_requested for o in offs)
 o.amount_requested for o in offs if o.amount_requested > 10000)
 
 
+# How I actually used it
+[o.email for o in mes if o.sponsor.first().slug=='green-visor-capital']
