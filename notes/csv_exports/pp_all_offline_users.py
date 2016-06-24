@@ -4,7 +4,7 @@ from datetime import datetime
 from properties.utils import format_amount
 from properties.models import Offer, Property
 
-with open('hoyt-import.csv', 'wb') as csvfile:
+with open('prospect_import.csv', 'wb') as csvfile:
     writer = csv.writer(csvfile)
     writer.writerow([
         smart_str(u"Email"),
