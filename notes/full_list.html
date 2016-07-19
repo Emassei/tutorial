@@ -1,0 +1,3837 @@
+{% extends 'base_generic.html' %}
+{% load thumbnail compress %}
+{% load static from staticfiles %}
+
+{% block page_type %}sponsor{% endblock page_type %}
+
+{% block title %}Sponsor List | {{ block.super }}{% endblock title %}
+
+{% block content %}
+<div class="main-hold">
+{% include 'sponsors/includes/sidebar.html' with active_nav='inquiry_create' %}
+<div id="content">
+  <div class="sponsor-list-heading">
+    <h1>Discover Companies like yours who have<br> found success with CrowdStreet</h1>
+  </div>
+  <div class="row">
+    <div class="medium-4 large-4 columns">
+      <div class="sponsor-tile">
+        <div class="header-image">
+            <img src="https://crowdstreet-prod.s3.amazonaws.com/media/property-images/QC-Hotel--Bar_800x450.jpg" class="" height="338">
+          <div class="sponsor-logo">
+            <a target="_blank" href="http://www.encorewealth.bz">
+              <img src="https://crowdstreet-prod.s3.amazonaws.com/media/sponsor_pics/Encore_Enterprises_logo.png">
+            </a>
+          </div>
+        </div>
+        <div class="sponsor-name">
+          <a target="_blank" href="http://www.encorewealth.bz"><h3>Encore Enterprises</h3></a>
+        </div>
+        <div class="property-type">
+          <span>Multifamily</span>
+        </div>
+        <div class='sponsor-data'>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">Assets Under Management</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">$800M</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">Total Portfolio Activity</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">$1.9B</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">SF Acquired</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">Confidential</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">Years In Business</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">17 Years</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-4 columns">
+              <div class="highlight">Location</div>
+            </div>
+            <div class="large-8 columns">
+              <div class="highlight-value">Dallas, TX</div>
+            </div>
+          </div>
+        </div>
+        <div class="solutions">
+          <div class="row">
+            <div class="large-12 columns">
+              <div class="highlight-value">CrowdStreet MarketPlace</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-12 columns">
+              <div class="highlight-value">CrowdStreet Sponsor Direct</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      <div class="medium-4 large-4 columns">
+      <div class="sponsor-tile">
+        <div class="header-image">
+            <img src="https://crowdstreet-prod.s3.amazonaws.com/media/property-images/490-First-Financing-Request---Debt-3_800x450_a35Ia0T.jpg" class="" height="338">
+          <div class="sponsor-logo">
+            <img src="https://crowdstreet-prod.s3.amazonaws.com/media/sponsor_pics/logo1.png">
+          </div>
+        </div>
+        <div class="sponsor-name">
+          <h3>Denholtz Associates</h3>
+        </div>
+        <div class="property-type">
+          <span>Office</span>
+        </div>
+        <div class='sponsor-data'>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">Assets Under Management</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">$1,000,000</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">Total Portfolio Activity</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">$3.82B</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">SF Acquired</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">$5M+</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">Years In Business</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">66 Years</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-4 columns">
+              <div class="highlight">Location</div>
+            </div>
+            <div class="large-8 columns">
+              <div class="highlight-value">Dallas, TX</div>
+            </div>
+          </div>
+        </div>
+        <div class="solutions">
+          <div class="row">
+            <div class="large-12 columns">
+              <div class="highlight-value">CrowdStreet MarketPlace</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-12">
+              <div class="highlight-value">CrowdStreet Sponsor Direct</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      <div class="medium-4 large-4 columns">
+      <div class="sponsor-tile">
+        <div class="header-image">
+            <img src="https://crowdstreet-prod.s3.amazonaws.com/media/property-images/10thg2_800x450.jpg" class="" height="338">
+          <div class="sponsor-logo">
+            <img src="https://crowdstreet-prod.s3.amazonaws.com/media/sponsor_pics/SKB-logo-square-transparent.png">
+          </div>
+        </div>
+        <div class="sponsor-name">
+          <h3>ScanlanKemperBard</h3>
+        </div>
+        <div class="property-type">
+          <span>Office &middot; Multifamily &middot; Industrial &middot; Retail &middot; Mixed-use</span>
+        </div>
+        <div class='sponsor-data'>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">Assets Under Management</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">$1.2B</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">Total Portfolio Activity</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">$3.82B</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">SF Acquired</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">265M</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">Years In Business</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">23 Years</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-4 columns">
+              <div class="highlight">Location</div>
+            </div>
+            <div class="large-8 columns">
+              <div class="highlight-value">Portland, OR</div>
+            </div>
+          </div>
+        </div>
+        <div class="solutions">
+          <div class="row">
+            <div class="large-12 columns">
+              <div class="highlight-value">CrowdStreet MarketPlace</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-12 columns">
+              <div style="height:19px"class="highlight-value"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="medium-4 large-4 columns">
+      <div class="sponsor-tile">
+        <div class="header-image">
+            <img src="https://crowdstreet-prod.s3.amazonaws.com/media/property-images/QC-Hotel--Bar_800x450.jpg" class="" height="338">
+          <div class="sponsor-logo">
+            <img src="https://crowdstreet-prod.s3.amazonaws.com/media/sponsor_pics/cs_logo_square_100x100.png">
+          </div>
+        </div>
+        <div class="sponsor-name">
+          <h3>CrowdStreet</h3>
+        </div>
+        <div class="property-type">
+          <span>Multifamily</span>
+        </div>
+        <div class='sponsor-data'>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">Assets Under Management</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">$800M</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">Total Portfolio Activity</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">$3.82B</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">SF Acquired</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">$1.98B</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">Years In Business</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">17 Years</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-4 columns">
+              <div class="highlight">Location</div>
+            </div>
+            <div class="large-8 columns">
+              <div class="highlight-value">Dallas, TX</div>
+            </div>
+          </div>
+        </div>
+        <div class="solutions">
+          <div class="row">
+            <div class="large-12 columns">
+              <div class="highlight-value">CrowdStreet MarketPlace</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-12">
+              <div class="highlight-value">CrowdStreet Sponsor Direct</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      <div class="medium-4 large-4 columns">
+      <div class="sponsor-tile">
+        <div class="header-image">
+            <img src="https://crowdstreet-prod.s3.amazonaws.com/media/property-images/MS_Bloomington_list.jpeg" class="" height="338">
+          <div class="sponsor-logo">
+            <img src="https://crowdstreet-prod.s3.amazonaws.com/media/sponsor_pics/Mainstreet__Investing_more_than_capital..png">
+          </div>
+        </div>
+        <div class="sponsor-name">
+          <h3>Mainstreet</h3>
+        </div>
+        <div class="property-type">
+          <span>Senior Housing</span>
+        </div>
+        <div class='sponsor-data'>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">Assets Under Management</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">$70M</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">Total Portfolio Activity</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">$1B</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">SF Acquired</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">Confidential</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">Years In Business</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">14 Years</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-4 columns">
+              <div class="highlight">Location</div>
+            </div>
+            <div class="large-8 columns">
+              <div class="highlight-value">Carmel, IN</div>
+            </div>
+          </div>
+        </div>
+        <div class="solutions">
+          <div class="row">
+            <div class="large-12 columns">
+              <div class="highlight-value">CrowdStreet MarketPlace</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-12">
+              <div style="height:19px"class="highlight-value"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      <div class="medium-4 large-4 columns">
+      <div class="sponsor-tile">
+        <div class="header-image">
+            <img src="https://crowdstreet-prod.s3.amazonaws.com/media/property-images/Tabor_I_3360_Division_800x450.jpg" class="" height="338">
+          <div class="sponsor-logo">
+            <img src="https://crowdstreet-prod.s3.amazonaws.com/media/sponsor_pics/UDP_1.png">
+          </div>
+        </div>
+        <div class="sponsor-name">
+          <h3>UD+P</h3>
+        </div>
+        <div class="property-type">
+          <span>Multifamily</span>
+        </div>
+        <div class='sponsor-data'>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">Assets Under Management</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">$49M</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">Total Portfolio Activity</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">$800M</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">SF Acquired</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">Confidential</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">Years In Business</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">11 Years</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-4 columns">
+              <div class="highlight">Location</div>
+            </div>
+            <div class="large-8 columns">
+              <div class="highlight-value">Portland, OR</div>
+            </div>
+          </div>
+        </div>
+        <div class="solutions">
+          <div class="row">
+            <div class="large-12 columns">
+              <div class="highlight-value">CrowdStreet Sponsor Direct</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-12 columns">
+              <div style="height:19px"class="highlight-value"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    <div class="row">
+    <div class="medium-4 large-4 columns">
+      <div class="sponsor-tile">
+        <div class="header-image">
+            <img src="https://crowdstreet-prod.s3.amazonaws.com/media/property-images/QC-Hotel--Bar_800x450.jpg" class="" height="338">
+          <div class="sponsor-logo">
+            <img src="https://crowdstreet-prod.s3.amazonaws.com/media/sponsor_pics/NB_Logo.jpg">
+          </div>
+        </div>
+        <div class="sponsor-name">
+          <h3>Nelson Brothers</h3>
+        </div>
+        <div class="property-type">
+          <span>Multifamily</span>
+        </div>
+        <div class='sponsor-data'>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">Assets Under Management</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">$800M</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">Total Portfolio Activity</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">$3.82B</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">SF Acquired</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">$1.98B</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">Years In Business</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">17 Years</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-4 columns">
+              <div class="highlight">Location</div>
+            </div>
+            <div class="large-8 columns">
+              <div class="highlight-value">Dallas, TX</div>
+            </div>
+          </div>
+        </div>
+        <div class="solutions">
+          <div class="row">
+            <div class="large-12 columns">
+              <div class="highlight-value">CrowdStreet MarketPlace</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-12">
+              <div class="highlight-value">CrowdStreet Sponsor Direct</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      <div class="medium-4 large-4 columns">
+      <div class="sponsor-tile">
+        <div class="header-image">
+            <img src="https://crowdstreet-prod.s3.amazonaws.com/media/property-images/lower-makefield-hd_KMGsBQG.jpg" class="" height="338">
+          <div class="sponsor-logo">
+            <img src="https://crowdstreet-prod.s3.amazonaws.com/media/sponsor_pics/LOGO.png">
+          </div>
+        </div>
+        <div class="sponsor-name">
+          <h3>Advalurem Group</h3>
+        </div>
+        <div class="property-type">
+          <span>Office</span>
+        </div>
+        <div class='sponsor-data'>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">Assets Under Management</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">$1,000,000</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">Total Portfolio Activity</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">$3.82B</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">SF Acquired</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">$5M+</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">Years In Business</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">66 Years</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-4 columns">
+              <div class="highlight">Location</div>
+            </div>
+            <div class="large-8 columns">
+              <div class="highlight-value">Dallas, TX</div>
+            </div>
+          </div>
+        </div>
+        <div class="solutions">
+          <div class="row">
+            <div class="large-12 columns">
+              <div class="highlight-value">CrowdStreet MarketPlace</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-12">
+              <div class="highlight-value">CrowdStreet Sponsor Direct</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      <div class="medium-4 large-4 columns">
+      <div class="sponsor-tile">
+        <div class="header-image">
+            <img src="https://crowdstreet-prod.s3.amazonaws.com/media/property-images/460-ext_800x450.jpg" class="" height="338">
+          <div class="sponsor-logo">
+            <img src="https://crowdstreet-prod.s3.amazonaws.com/media/sponsor_pics/everwest_logo_sqr4.png">
+          </div>
+        </div>
+        <div class="sponsor-name">
+          <h3>EverWest Real Estate Partners</h3>
+        </div>
+        <div class="property-type">
+          <span>Office</span>
+        </div>
+        <div class='sponsor-data'>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">Assets Under Management</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">$1,000,000</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">Total Portfolio Activity</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">$3.82B</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">SF Acquired</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">$3.82B</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">Years In Business</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">23 Years</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-4 columns">
+              <div class="highlight">Location</div>
+            </div>
+            <div class="large-8 columns">
+              <div class="highlight-value">Dallas, TX</div>
+            </div>
+          </div>
+        </div>
+        <div class="solutions">
+          <div class="row">
+            <div class="large-12 columns">
+              <div class="highlight-value">CrowdStreet MarketPlace</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-12 columns">
+              <div style="height:19px"class="highlight-value"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    <div class="row">
+    <div class="medium-4 large-4 columns">
+      <div class="sponsor-tile">
+        <div class="header-image">
+            <img src="https://crowdstreet-prod.s3.amazonaws.com/media/property-images/resize_list_image08.jpg" class="" height="338">
+          <div class="sponsor-logo">
+            <img src="https://crowdstreet-prod.s3.amazonaws.com/media/sponsor_pics/resize_logo.png">
+          </div>
+        </div>
+        <div class="sponsor-name">
+          <h3>Windmill Investments</h3>
+        </div>
+        <div class="property-type">
+          <span>Multifamily</span>
+        </div>
+        <div class='sponsor-data'>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">Assets Under Management</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">$99M</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">Total Portfolio Activity</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">$150M</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">SF Acquired</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">Confidential</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">Years In Business</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">5</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-4 columns">
+              <div class="highlight">Location</div>
+            </div>
+            <div class="large-8 columns">
+              <div class="highlight-value">Salerm, OR</div>
+            </div>
+          </div>
+        </div>
+        <div class="solutions">
+          <div class="row">
+            <div class="large-12 columns">
+              <div class="highlight-value">CrowdStreet MarketPlace</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-12">
+              <div style="height:19px"class="highlight-value"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      <div class="medium-4 large-4 columns">
+      <div class="sponsor-tile">
+        <div class="header-image">
+            <img src="https://crowdstreet-prod.s3.amazonaws.com/media/property-images/AlexanArtsExteriorDay800x450.jpg" class="" height="338">
+          <div class="sponsor-logo">
+            <img src="https://crowdstreet-prod.s3.amazonaws.com/media/sponsor_pics/logo-2.jpg">
+          </div>
+        </div>
+        <div class="sponsor-name">
+          <h3>Olympus Property</h3>
+        </div>
+        <div class="property-type">
+          <span>Multifamily</span>
+        </div>
+        <div class='sponsor-data'>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">Assets Under Management</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">$1B</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">Total Portfolio Activity</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">$1B</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">SF Acquired</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">Confidential</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">Years In Business</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">24 Years</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-4 columns">
+              <div class="highlight">Location</div>
+            </div>
+            <div class="large-8 columns">
+              <div class="highlight-value">Fort Worth, TX</div>
+            </div>
+          </div>
+        </div>
+        <div class="solutions">
+          <div class="row">
+            <div class="large-12 columns">
+              <div class="highlight-value">CrowdStreet MarketPlace</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-12">
+              <div class="highlight-value">CrowdStreet Sponsor Direct</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      <div class="medium-4 large-4 columns">
+      <div class="sponsor-tile">
+        <div class="header-image">
+            <img src="https://crowdstreet-prod.s3.amazonaws.com/media/property-images/list-image.png" class="" height="338">
+          <div class="sponsor-logo">
+            <img src="https://crowdstreet-prod.s3.amazonaws.com/media/sponsor_pics/wwg-logo-edited.png">
+          </div>
+        </div>
+        <div class="sponsor-name">
+          <h3>William Warren Group</h3>
+        </div>
+        <div class="property-type">
+          <span>Office</span>
+        </div>
+        <div class='sponsor-data'>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">Assets Under Management</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">$1,000,000</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">Total Portfolio Activity</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">$3.82B</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">SF Acquired</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">$3.82B</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">Years In Business</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">23 Years</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-4 columns">
+              <div class="highlight">Location</div>
+            </div>
+            <div class="large-8 columns">
+              <div class="highlight-value">Dallas, TX</div>
+            </div>
+          </div>
+        </div>
+        <div class="solutions">
+          <div class="row">
+            <div class="large-12 columns">
+              <div class="highlight-value">CrowdStreet MarketPlace</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-12 columns">
+              <div style="height:19px"class="highlight-value"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    <div class="row">
+    <div class="medium-4 large-4 columns">
+      <div class="sponsor-tile">
+        <div class="header-image">
+            <img src="https://crowdstreet-prod.s3.amazonaws.com/media/property-images/list_Y9D7B9e.jpg" class="" height="338">
+          <div class="sponsor-logo">
+            <img src="https://crowdstreet-prod.s3.amazonaws.com/media/sponsor_pics/urban-logo1.png">
+          </div>
+        </div>
+        <div class="sponsor-name">
+          <h3>Urban Green Investments</h3>
+        </div>
+        <div class="property-type">
+          <span>Residential &middot; Mixed-Use &middot; Office</span>
+        </div>
+        <div class='sponsor-data'>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">Assets Under Management</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">$392M</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">Total Portfolio Activity</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">$692M</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">SF Acquired</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">Confidential</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">Years In Business</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">9 Years</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-4 columns">
+              <div class="highlight">Location</div>
+            </div>
+            <div class="large-8 columns">
+              <div class="highlight-value">San Francisco, CA</div>
+            </div>
+          </div>
+        </div>
+        <div class="solutions">
+          <div class="row">
+            <div class="large-12 columns">
+              <div class="highlight-value">CrowdStreet MarketPlace</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-12">
+              <div style="height:19px"class="highlight-value"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      <div class="medium-4 large-4 columns">
+      <div class="sponsor-tile">
+        <div class="header-image">
+            <img src="https://crowdstreet-prod.s3.amazonaws.com/media/property-images/exterior-front-sign-redo.jpg" class="" height="338">
+          <div class="sponsor-logo">
+            <img src="https://crowdstreet-prod.s3.amazonaws.com/media/sponsor_pics/AA-logo.jpg">
+          </div>
+        </div>
+        <div class="sponsor-name">
+          <h3>Aldwin Apartments </h3>
+        </div>
+        <div class="property-type">
+          <span>Multifamily</span>
+        </div>
+        <div class='sponsor-data'>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">Assets Under Management</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">$150M</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">Total Portfolio Activity</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">$150M</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">SF Acquired</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">1.49M</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">Years In Business</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">7 Years</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-4 columns">
+              <div class="highlight">Location</div>
+            </div>
+            <div class="large-8 columns">
+              <div class="highlight-value">Southborough, MA</div>
+            </div>
+          </div>
+        </div>
+        <div class="solutions">
+          <div class="row">
+            <div class="large-12 columns">
+              <div class="highlight-value">CrowdStreet MarketPlace</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-12">
+              <div style="height:19px"class="highlight-value"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      <div class="medium-4 large-4 columns">
+      <div class="sponsor-tile">
+        <div class="header-image">
+            <img src="https://crowdstreet-prod.s3.amazonaws.com/media/property-images/list2_k40x1gQ.jpg" class="" height="338">
+          <div class="sponsor-logo">
+            <img src="https://crowdstreet-prod.s3.amazonaws.com/media/sponsor_pics/westmount_logo_rework.png">
+          </div>
+        </div>
+        <div class="sponsor-name">
+          <h3>Westmount</h3>
+        </div>
+        <div class="property-type">
+          <span>Office</span>
+        </div>
+        <div class='sponsor-data'>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">Assets Under Management</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">$1,000,000</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">Total Portfolio Activity</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">$3.82B</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">SF Acquired</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">$3.82B</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">Years In Business</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">23 Years</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-4 columns">
+              <div class="highlight">Location</div>
+            </div>
+            <div class="large-8 columns">
+              <div class="highlight-value">Dallas, TX</div>
+            </div>
+          </div>
+        </div>
+        <div class="solutions">
+          <div class="row">
+            <div class="large-12 columns">
+              <div class="highlight-value">CrowdStreet MarketPlace</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-12 columns">
+              <div style="height:19px"class="highlight-value"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    <div class="row">
+    <div class="medium-4 large-4 columns">
+      <div class="sponsor-tile">
+        <div class="header-image">
+            <img src="https://crowdstreet-prod.s3.amazonaws.com/media/property-images/list_image_Wmv8o6u.jpg" class="" height="338">
+          <div class="sponsor-logo">
+            <img src="https://crowdstreet-prod.s3.amazonaws.com/media/sponsor_pics/Phoinix_logo1.png">
+          </div>
+        </div>
+        <div class="sponsor-name">
+          <h3>Phoinix Capital Partners</h3>
+        </div>
+        <div class="property-type">
+          <span>Multifamily</span>
+        </div>
+        <div class='sponsor-data'>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">Assets Under Management</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">$800M</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">Total Portfolio Activity</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">$3.82B</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">SF Acquired</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">$1.98B</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">Years In Business</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">17 Years</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-4 columns">
+              <div class="highlight">Location</div>
+            </div>
+            <div class="large-8 columns">
+              <div class="highlight-value">Dallas, TX</div>
+            </div>
+          </div>
+        </div>
+        <div class="solutions">
+          <div class="row">
+            <div class="large-12 columns">
+              <div class="highlight-value">CrowdStreet MarketPlace</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-12">
+              <div class="highlight-value">CrowdStreet Sponsor Direct</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      <div class="medium-4 large-4 columns">
+      <div class="sponsor-tile">
+        <div class="header-image">
+            <img src="https://crowdstreet-prod.s3.amazonaws.com/media/property-images/list_h9ctNR0.jpg" class="" height="338">
+          <div class="sponsor-logo">
+            <img src="https://crowdstreet-prod.s3.amazonaws.com/media/sponsor_pics/logo1.jpg">
+          </div>
+        </div>
+        <div class="sponsor-name">
+          <h3>Capital Commercial Investments</h3>
+        </div>
+        <div class="property-type">
+          <span>Industrial &middot; Office &middot; Retail</span>
+        </div>
+        <div class='sponsor-data'>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">Assets Under Management</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">$150M</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">Total Portfolio Activity</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">$750B</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">SF Acquired</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">6M</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">Years In Business</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">66 Years</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-4 columns">
+              <div class="highlight">Location</div>
+            </div>
+            <div class="large-8 columns">
+              <div class="highlight-value">Austin, TX</div>
+            </div>
+          </div>
+        </div>
+        <div class="solutions">
+          <div class="row">
+            <div class="large-12 columns">
+              <div class="highlight-value">CrowdStreet MarketPlace</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-12">
+              <div style="height:19px"class="highlight-value"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      <div class="medium-4 large-4 columns">
+      <div class="sponsor-tile">
+        <div class="header-image">
+            <img src="https://crowdstreet-prod.s3.amazonaws.com/media/property-images/BF-Exec-Sum-1_800x450.jpg" class="" height="338">
+          <div class="sponsor-logo">
+            <img src="https://crowdstreet-prod.s3.amazonaws.com/media/sponsor_pics/logo_edited.jpg">
+          </div>
+        </div>
+        <div class="sponsor-name">
+          <h3>Trade Winds Real Estate</h3>
+        </div>
+        <div class="property-type">
+          <span>Office</span>
+        </div>
+        <div class='sponsor-data'>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">Assets Under Management</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">$1,000,000</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">Total Portfolio Activity</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">$3.82B</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">SF Acquired</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">$3.82B</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">Years In Business</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">23 Years</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-4 columns">
+              <div class="highlight">Location</div>
+            </div>
+            <div class="large-8 columns">
+              <div class="highlight-value">Dallas, TX</div>
+            </div>
+          </div>
+        </div>
+        <div class="solutions">
+          <div class="row">
+            <div class="large-12 columns">
+              <div class="highlight-value">CrowdStreet MarketPlace</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-12 columns">
+              <div style="height:19px"class="highlight-value"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    <div class="row">
+    <div class="medium-4 large-4 columns">
+      <div class="sponsor-tile">
+        <div class="header-image">
+            <img src="https://crowdstreet-prod.s3.amazonaws.com/media/property-images/TRP-Funv-VII-1_800x450" class="" height="338">
+          <div class="sponsor-logo">
+            <img src="https://crowdstreet-prod.s3.amazonaws.com/media/sponsor_pics/TwinRock_Logo_400_x_400.jpeg">
+          </div>
+        </div>
+        <div class="sponsor-name">
+          <h3>TwinRock Partners</h3>
+        </div>
+        <div class="property-type">
+          <span>Multifamily</span>
+        </div>
+        <div class='sponsor-data'>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">Assets Under Management</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">$800M</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">Total Portfolio Activity</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">$3.82B</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">SF Acquired</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">$1.98B</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">Years In Business</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">17 Years</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-4 columns">
+              <div class="highlight">Location</div>
+            </div>
+            <div class="large-8 columns">
+              <div class="highlight-value">Dallas, TX</div>
+            </div>
+          </div>
+        </div>
+        <div class="solutions">
+          <div class="row">
+            <div class="large-12 columns">
+              <div class="highlight-value">CrowdStreet MarketPlace</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-12">
+              <div class="highlight-value">CrowdStreet Sponsor Direct</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      <div class="medium-4 large-4 columns">
+      <div class="sponsor-tile">
+        <div class="header-image">
+            <img src="https://crowdstreet-prod.s3.amazonaws.com/media/property-images/SevenPeaks_800_logo.jpg" class="" height="338">
+          <div class="sponsor-logo">
+            <img src="https://crowdstreet-prod.s3.amazonaws.com/media/sponsor_pics/SevenPeaksVentures_Logo.png">
+          </div>
+        </div>
+        <div class="sponsor-name">
+          <h3>Seven Peaks Ventures</h3>
+        </div>
+        <div class="property-type">
+          <span>Office</span>
+        </div>
+        <div class='sponsor-data'>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">Assets Under Management</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">$1,000,000</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">Total Portfolio Activity</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">$3.82B</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">SF Acquired</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">$5M+</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">Years In Business</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">66 Years</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-4 columns">
+              <div class="highlight">Location</div>
+            </div>
+            <div class="large-8 columns">
+              <div class="highlight-value">Dallas, TX</div>
+            </div>
+          </div>
+        </div>
+        <div class="solutions">
+          <div class="row">
+            <div class="large-12 columns">
+              <div class="highlight-value">CrowdStreet MarketPlace</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-12">
+              <div class="highlight-value">CrowdStreet Sponsor Direct</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      <div class="medium-4 large-4 columns">
+      <div class="sponsor-tile">
+        <div class="header-image">
+            <img src="https://crowdstreet-prod.s3.amazonaws.com/media/property-images/latest.jpg" class="" height="338">
+          <div class="sponsor-logo">
+            <img src="https://crowdstreet-prod.s3.amazonaws.com/media/sponsor_pics/avec_logo.png">
+          </div>
+        </div>
+        <div class="sponsor-name">
+          <h3>Farran Realty Partners</h3>
+        </div>
+        <div class="property-type">
+          <span>Office</span>
+        </div>
+        <div class='sponsor-data'>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">Assets Under Management</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">$1,000,000</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">Total Portfolio Activity</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">$3.82B</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">SF Acquired</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">$3.82B</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">Years In Business</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">23 Years</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-4 columns">
+              <div class="highlight">Location</div>
+            </div>
+            <div class="large-8 columns">
+              <div class="highlight-value">Dallas, TX</div>
+            </div>
+          </div>
+        </div>
+        <div class="solutions">
+          <div class="row">
+            <div class="large-12 columns">
+              <div class="highlight-value">CrowdStreet MarketPlace</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-12 columns">
+              <div style="height:19px"class="highlight-value"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    <div class="row">
+    <div class="medium-4 large-4 columns">
+      <div class="sponsor-tile">
+        <div class="header-image">
+            <img src="https://crowdstreet-prod.s3.amazonaws.com/media/property-images/list_1y8JW9Q.jpg" class="" height="338">
+          <div class="sponsor-logo">
+            <img src="https://crowdstreet-prod.s3.amazonaws.com/media/sponsor_pics/logo_XQ5DIjK.jpg">
+          </div>
+        </div>
+        <div class="sponsor-name">
+          <h3>Franklin Realty</h3>
+        </div>
+        <div class="property-type">
+          <span>Office &middot; Multifamily</span>
+        </div>
+        <div class='sponsor-data'>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">Assets Under Management</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">$500M</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">Total Portfolio Activity</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">$600M</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">SF Acquired</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">4.5M</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">Years In Business</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">31 Years</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-4 columns">
+              <div class="highlight">Location</div>
+            </div>
+            <div class="large-8 columns">
+              <div class="highlight-value">Bluebell, PA</div>
+            </div>
+          </div>
+        </div>
+        <div class="solutions">
+          <div class="row">
+            <div class="large-12 columns">
+              <div class="highlight-value">CrowdStreet MarketPlace</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-12">
+              <div style="height:19px"class="highlight-value"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      <div class="medium-4 large-4 columns">
+      <div class="sponsor-tile">
+        <div class="header-image">
+            <img src="https://crowdstreet-prod.s3.amazonaws.com/media/property-images/summary_outside.jpg" class="" height="338">
+          <div class="sponsor-logo">
+            <img src="https://crowdstreet-prod.s3.amazonaws.com/media/sponsor_pics/CRE_logo.png">
+          </div>
+        </div>
+        <div class="sponsor-name">
+          <h3>Capital Real Estate</h3>
+        </div>
+        <div class="property-type">
+          <span>Multifamily</span>
+        </div>
+        <div class='sponsor-data'>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">Assets Under Management</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">$400M</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">Total Portfolio Activity</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">$457M</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">SF Acquired</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">3.95M</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">Years In Business</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">11 Years</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-4 columns">
+              <div class="highlight">Location</div>
+            </div>
+            <div class="large-8 columns">
+              <div class="highlight-value">Denver, CO</div>
+            </div>
+          </div>
+        </div>
+        <div class="solutions">
+          <div class="row">
+            <div class="large-12 columns">
+              <div class="highlight-value">CrowdStreet MarketPlace</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-12">
+              <div style="height:19px"class="highlight-value"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      <div class="medium-4 large-4 columns">
+      <div class="sponsor-tile">
+        <div class="header-image">
+            <img src="https://crowdstreet-prod.s3.amazonaws.com/media/property-images/Highlands-Ranch_OM_Email-1_800x450.jpg" class="" height="338">
+          <div class="sponsor-logo">
+            <img src="https://crowdstreet-prod.s3.amazonaws.com/media/sponsor_pics/bancroft.jpg">
+          </div>
+        </div>
+        <div class="sponsor-name">
+          <h3>Bancroft</h3>
+        </div>
+        <div class="property-type">
+          <span>Office</span>
+        </div>
+        <div class='sponsor-data'>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">Assets Under Management</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">$1,000,000</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">Total Portfolio Activity</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">$3.82B</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">SF Acquired</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">$3.82B</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">Years In Business</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">23 Years</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-4 columns">
+              <div class="highlight">Location</div>
+            </div>
+            <div class="large-8 columns">
+              <div class="highlight-value">Dallas, TX</div>
+            </div>
+          </div>
+        </div>
+        <div class="solutions">
+          <div class="row">
+            <div class="large-12 columns">
+              <div class="highlight-value">CrowdStreet MarketPlace</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-12 columns">
+              <div style="height:19px"class="highlight-value"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    <div class="row">
+    <div class="medium-4 large-4 columns">
+      <div class="sponsor-tile">
+        <div class="header-image">
+            <img src="https://crowdstreet-prod.s3.amazonaws.com/media/property-images/list_jy9QOQ1.jpg" class="" height="338">
+          <div class="sponsor-logo">
+            <img src="https://crowdstreet-prod.s3.amazonaws.com/media/sponsor_pics/logo_BiPgtN9.png">
+          </div>
+        </div>
+        <div class="sponsor-name">
+          <h3>Hayman Properties</h3>
+        </div>
+        <div class="property-type">
+          <span>Multifamily</span>
+        </div>
+        <div class='sponsor-data'>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">Assets Under Management</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">$800M</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">Total Portfolio Activity</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">$3.82B</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">SF Acquired</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">$1.98B</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">Years In Business</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">17 Years</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-4 columns">
+              <div class="highlight">Location</div>
+            </div>
+            <div class="large-8 columns">
+              <div class="highlight-value">Dallas, TX</div>
+            </div>
+          </div>
+        </div>
+        <div class="solutions">
+          <div class="row">
+            <div class="large-12 columns">
+              <div class="highlight-value">CrowdStreet MarketPlace</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-12">
+              <div class="highlight-value">CrowdStreet Sponsor Direct</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      <div class="medium-4 large-4 columns">
+      <div class="sponsor-tile">
+        <div class="header-image">
+            <img src="https://crowdstreet-prod.s3.amazonaws.com/media/property-images/list_XuMmTdw.jpg" class="" height="338">
+          <div class="sponsor-logo">
+            <img src="https://crowdstreet-prod.s3.amazonaws.com/media/sponsor_pics/logo-fixed.jpg">
+          </div>
+        </div>
+        <div class="sponsor-name">
+          <h3>Global Senior Housing</h3>
+        </div>
+        <div class="property-type">
+          <span>Office</span>
+        </div>
+        <div class='sponsor-data'>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">Assets Under Management</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">$1,000,000</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">Total Portfolio Activity</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">$3.82B</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">SF Acquired</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">$5M+</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">Years In Business</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">66 Years</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-4 columns">
+              <div class="highlight">Location</div>
+            </div>
+            <div class="large-8 columns">
+              <div class="highlight-value">Dallas, TX</div>
+            </div>
+          </div>
+        </div>
+        <div class="solutions">
+          <div class="row">
+            <div class="large-12 columns">
+              <div class="highlight-value">CrowdStreet MarketPlace</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-12">
+              <div class="highlight-value">CrowdStreet Sponsor Direct</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      <div class="medium-4 large-4 columns">
+      <div class="sponsor-tile">
+        <div class="header-image">
+            <img src="https://crowdstreet-prod.s3.amazonaws.com/media/property-images/10thg2_800x450.jpg" class="" height="338">
+          <div class="sponsor-logo">
+            <img src="https://crowdstreet-prod.s3.amazonaws.com/media/sponsor_pics/logo_UP1sfTx.png">
+          </div>
+        </div>
+        <div class="sponsor-name">
+          <h3>Brennan Investment Group</h3>
+        </div>
+        <div class="property-type">
+          <span>Office</span>
+        </div>
+        <div class='sponsor-data'>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">Assets Under Management</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">$1,000,000</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">Total Portfolio Activity</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">$3.82B</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">SF Acquired</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">$3.82B</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">Years In Business</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">23 Years</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-4 columns">
+              <div class="highlight">Location</div>
+            </div>
+            <div class="large-8 columns">
+              <div class="highlight-value">Dallas, TX</div>
+            </div>
+          </div>
+        </div>
+        <div class="solutions">
+          <div class="row">
+            <div class="large-12 columns">
+              <div class="highlight-value">CrowdStreet MarketPlace</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-12 columns">
+              <div style="height:19px"class="highlight-value"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    <div class="row">
+    <div class="medium-4 large-4 columns">
+      <div class="sponsor-tile">
+        <div class="header-image">
+            <img src="https://crowdstreet-prod.s3.amazonaws.com/media/property-images/List521x293_eru4HjM.jpg" class="" height="338">
+          <div class="sponsor-logo">
+            <img src="https://crowdstreet-prod.s3.amazonaws.com/media/sponsor_pics/400x400transparent.png">
+          </div>
+        </div>
+        <div class="sponsor-name">
+          <h3>Virtua Partners</h3>
+        </div>
+        <div class="property-type">
+          <span>Multifamily</span>
+        </div>
+        <div class='sponsor-data'>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">Assets Under Management</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">$800M</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">Total Portfolio Activity</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">$3.82B</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">SF Acquired</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">$1.98B</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">Years In Business</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">17 Years</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-4 columns">
+              <div class="highlight">Location</div>
+            </div>
+            <div class="large-8 columns">
+              <div class="highlight-value">Dallas, TX</div>
+            </div>
+          </div>
+        </div>
+        <div class="solutions">
+          <div class="row">
+            <div class="large-12 columns">
+              <div class="highlight-value">CrowdStreet MarketPlace</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-12">
+              <div class="highlight-value">CrowdStreet Sponsor Direct</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      <div class="medium-4 large-4 columns">
+      <div class="sponsor-tile">
+        <div class="header-image">
+            <img src="https://crowdstreet-prod.s3.amazonaws.com/media/property-images/2321-University-List-New.jpg" class="" height="338">
+          <div class="sponsor-logo">
+            <img src="https://crowdstreet-prod.s3.amazonaws.com/media/sponsor_pics/logo_PnqpQkt.jpg">
+          </div>
+        </div>
+        <div class="sponsor-name">
+          <h3>Kleban Properties</h3>
+        </div>
+        <div class="property-type">
+          <span>Office</span>
+        </div>
+        <div class='sponsor-data'>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">Assets Under Management</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">$1,000,000</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">Total Portfolio Activity</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">$3.82B</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">SF Acquired</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">$5M+</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">Years In Business</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">66 Years</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-4 columns">
+              <div class="highlight">Location</div>
+            </div>
+            <div class="large-8 columns">
+              <div class="highlight-value">Dallas, TX</div>
+            </div>
+          </div>
+        </div>
+        <div class="solutions">
+          <div class="row">
+            <div class="large-12 columns">
+              <div class="highlight-value">CrowdStreet MarketPlace</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-12">
+              <div class="highlight-value">CrowdStreet Sponsor Direct</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      <div class="medium-4 large-4 columns">
+      <div class="sponsor-tile">
+        <div class="header-image">
+            <img src="https://crowdstreet-prod.s3.amazonaws.com/media/property-images/CRIF800x450.jpg" class="" height="338">
+          <div class="sponsor-logo">
+            <img src="https://crowdstreet-prod.s3.amazonaws.com/media/sponsor_pics/cadence_logo_sqr.jpg">
+          </div>
+        </div>
+        <div class="sponsor-name">
+          <h3>Cadence Asset Management</h3>
+        </div>
+        <div class="property-type">
+          <span>Office</span>
+        </div>
+        <div class='sponsor-data'>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">Assets Under Management</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">$1,000,000</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">Total Portfolio Activity</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">$3.82B</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">SF Acquired</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">$3.82B</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">Years In Business</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">23 Years</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-4 columns">
+              <div class="highlight">Location</div>
+            </div>
+            <div class="large-8 columns">
+              <div class="highlight-value">Dallas, TX</div>
+            </div>
+          </div>
+        </div>
+        <div class="solutions">
+          <div class="row">
+            <div class="large-12 columns">
+              <div class="highlight-value">CrowdStreet MarketPlace</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-12 columns">
+              <div style="height:19px"class="highlight-value"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    <div class="row">
+    <div class="medium-4 large-4 columns">
+      <div class="sponsor-tile">
+        <div class="header-image">
+            <img src="https://crowdstreet-prod.s3.amazonaws.com/media/property-images/1689_847x399.jpg" class="" height="338">
+          <div class="sponsor-logo">
+            <img src="https://crowdstreet-prod.s3.amazonaws.com/media/sponsor_pics/Global-Building-Logo-square.png">
+          </div>
+        </div>
+        <div class="sponsor-name">
+          <h3>Global Building</h3>
+        </div>
+        <div class="property-type">
+          <span>Multifamily</span>
+        </div>
+        <div class='sponsor-data'>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">Assets Under Management</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">$800M</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">Total Portfolio Activity</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">$3.82B</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">SF Acquired</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">$1.98B</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">Years In Business</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">17 Years</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-4 columns">
+              <div class="highlight">Location</div>
+            </div>
+            <div class="large-8 columns">
+              <div class="highlight-value">Dallas, TX</div>
+            </div>
+          </div>
+        </div>
+        <div class="solutions">
+          <div class="row">
+            <div class="large-12 columns">
+              <div class="highlight-value">CrowdStreet MarketPlace</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-12">
+              <div class="highlight-value">CrowdStreet Sponsor Direct</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      <div class="medium-4 large-4 columns">
+      <div class="sponsor-tile">
+        <div class="header-image">
+            <img src="https://crowdstreet-prod.s3.amazonaws.com/media/property-images/IMG_7798_800x450.jpg" class="" height="338">
+          <div class="sponsor-logo">
+            <img src="https://crowdstreet-prod.s3.amazonaws.com/media/sponsor_pics/Ilan-Good-Quality-Logo.png">
+          </div>
+        </div>
+        <div class="sponsor-name">
+          <h3>Ilan Investments</h3>
+        </div>
+        <div class="property-type">
+          <span>Office</span>
+        </div>
+        <div class='sponsor-data'>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">Assets Under Management</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">$1,000,000</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">Total Portfolio Activity</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">$3.82B</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">SF Acquired</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">$5M+</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">Years In Business</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">66 Years</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-4 columns">
+              <div class="highlight">Location</div>
+            </div>
+            <div class="large-8 columns">
+              <div class="highlight-value">Dallas, TX</div>
+            </div>
+          </div>
+        </div>
+        <div class="solutions">
+          <div class="row">
+            <div class="large-12 columns">
+              <div class="highlight-value">CrowdStreet MarketPlace</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-12">
+              <div class="highlight-value">CrowdStreet Sponsor Direct</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      <div class="medium-4 large-4 columns">
+      <div class="sponsor-tile">
+        <div class="header-image">
+            <img src="https://crowdstreet-prod.s3.amazonaws.com/media/property-images/Holiday-Inn-Lima_800x450.jpg" class="" height="338">
+          <div class="sponsor-logo">
+            <img src="https://crowdstreet-prod.s3.amazonaws.com/media/sponsor_pics/Logo_IntelliStay-square5.png">
+          </div>
+        </div>
+        <div class="sponsor-name">
+          <h3 style="font-size:1.15rem">IntelliStay Hospitality Management </h3>
+        </div>
+        <div class="property-type">
+          <span>Office</span>
+        </div>
+        <div class='sponsor-data'>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">Assets Under Management</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">$1,000,000</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">Total Portfolio Activity</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">$3.82B</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">SF Acquired</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">$3.82B</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">Years In Business</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">23 Years</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-4 columns">
+              <div class="highlight">Location</div>
+            </div>
+            <div class="large-8 columns">
+              <div class="highlight-value">Dallas, TX</div>
+            </div>
+          </div>
+        </div>
+        <div class="solutions">
+          <div class="row">
+            <div class="large-12 columns">
+              <div class="highlight-value">CrowdStreet MarketPlace</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-12 columns">
+              <div style="height:19px"class="highlight-value"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    <div class="row">
+    <div class="medium-4 large-4 columns">
+      <div class="sponsor-tile">
+        <div class="header-image">
+            <img src="https://crowdstreet-prod.s3.amazonaws.com/media/property-images/F-HD_01_800x450.jpg" class="" height="338">
+          <div class="sponsor-logo">
+            <img style="background:black"src="https://crowdstreet-prod.s3.amazonaws.com/media/sponsor_pics/guerrilla-logo.png">
+          </div>
+        </div>
+        <div class="sponsor-name">
+          <h3>Guerrilla Development</h3>
+        </div>
+        <div class="property-type">
+          <span>Multifamily</span>
+        </div>
+        <div class='sponsor-data'>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">Assets Under Management</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">$800M</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">Total Portfolio Activity</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">$3.82B</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">SF Acquired</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">$1.98B</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">Years In Business</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">17 Years</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-4 columns">
+              <div class="highlight">Location</div>
+            </div>
+            <div class="large-8 columns">
+              <div class="highlight-value">Dallas, TX</div>
+            </div>
+          </div>
+        </div>
+        <div class="solutions">
+          <div class="row">
+            <div class="large-12 columns">
+              <div class="highlight-value">CrowdStreet MarketPlace</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-12">
+              <div class="highlight-value">CrowdStreet Sponsor Direct</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      <div class="medium-4 large-4 columns">
+      <div class="sponsor-tile">
+        <div class="header-image">
+            <img src="https://crowdstreet-prod.s3.amazonaws.com/media/property-images/AvisonRip2_800x450.jpg" class="" height="338">
+          <div class="sponsor-logo">
+            <img src="https://crowdstreet-prod.s3.amazonaws.com/media/sponsor_pics/Alpha_Investors_NoTag_Symbol_SQUARE.png">
+          </div>
+        </div>
+        <div class="sponsor-name">
+          <h3>Alpha Wave Investors</h3>
+        </div>
+        <div class="property-type">
+          <span>Office</span>
+        </div>
+        <div class='sponsor-data'>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">Assets Under Management</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">$1,000,000</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">Total Portfolio Activity</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">$3.82B</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">SF Acquired</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">$5M+</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">Years In Business</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">66 Years</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-4 columns">
+              <div class="highlight">Location</div>
+            </div>
+            <div class="large-8 columns">
+              <div class="highlight-value">Dallas, TX</div>
+            </div>
+          </div>
+        </div>
+        <div class="solutions">
+          <div class="row">
+            <div class="large-12 columns">
+              <div class="highlight-value">CrowdStreet MarketPlace</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-12">
+              <div class="highlight-value">CrowdStreet Sponsor Direct</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      <div class="medium-4 large-4 columns">
+      <div class="sponsor-tile">
+        <div class="header-image">
+            <img src="https://crowdstreet-prod.s3.amazonaws.com/media/property-images/460-ext_800x450.jpg" class="" height="338">
+          <div class="sponsor-logo">
+            <img src="https://crowdstreet-prod.s3.amazonaws.com/media/sponsor_pics/Everest-Logo-grey1_Square.png">
+          </div>
+        </div>
+        <div class="sponsor-name">
+          <h3>Everest Medical Core Properties</h3>
+        </div>
+        <div class="property-type">
+          <span>Office</span>
+        </div>
+        <div class='sponsor-data'>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">Assets Under Management</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">$1,000,000</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">Total Portfolio Activity</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">$3.82B</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">SF Acquired</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">$3.82B</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">Years In Business</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">23 Years</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-4 columns">
+              <div class="highlight">Location</div>
+            </div>
+            <div class="large-8 columns">
+              <div class="highlight-value">Dallas, TX</div>
+            </div>
+          </div>
+        </div>
+        <div class="solutions">
+          <div class="row">
+            <div class="large-12 columns">
+              <div class="highlight-value">CrowdStreet MarketPlace</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-12 columns">
+              <div style="height:19px"class="highlight-value"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    <div class="row">
+    <div class="medium-4 large-4 columns">
+      <div class="sponsor-tile">
+        <div class="header-image">
+            <img src="https://crowdstreet-prod.s3.amazonaws.com/media/property-images/Crossings-Deck_800x450.jpg" class="" height="338">
+          <div class="sponsor-logo">
+            <img src="https://crowdstreet-prod.s3.amazonaws.com/media/sponsor_pics/Vest-logo1_square.png">
+          </div>
+        </div>
+        <div class="sponsor-name">
+          <h3>Vesta Hospitality, LLC</h3>
+        </div>
+        <div class="property-type">
+          <span>Multifamily</span>
+        </div>
+        <div class='sponsor-data'>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">Assets Under Management</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">$800M</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">Total Portfolio Activity</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">$3.82B</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">SF Acquired</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">$1.98B</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">Years In Business</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">17 Years</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-4 columns">
+              <div class="highlight">Location</div>
+            </div>
+            <div class="large-8 columns">
+              <div class="highlight-value">Dallas, TX</div>
+            </div>
+          </div>
+        </div>
+        <div class="solutions">
+          <div class="row">
+            <div class="large-12 columns">
+              <div class="highlight-value">CrowdStreet MarketPlace</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-12">
+              <div class="highlight-value">CrowdStreet Sponsor Direct</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      <div class="medium-4 large-4 columns">
+      <div class="sponsor-tile">
+        <div class="header-image">
+            <img src="https://crowdstreet-prod.s3.amazonaws.com/media/property-images/bldg_palms_1_800x450.jpg" class="" height="338">
+          <div class="sponsor-logo">
+            <img src="https://crowdstreet-prod.s3.amazonaws.com/media/sponsor_pics/The-ODonnell-Group_PPT-03-22-16-3.jpg">
+          </div>
+        </div>
+        <div class="sponsor-name">
+          <h3>O'Donnell Group</h3>
+        </div>
+        <div class="property-type">
+          <span>Office</span>
+        </div>
+        <div class='sponsor-data'>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">Assets Under Management</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">$1,000,000</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">Total Portfolio Activity</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">$3.82B</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">SF Acquired</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">$5M+</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">Years In Business</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">66 Years</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-4 columns">
+              <div class="highlight">Location</div>
+            </div>
+            <div class="large-8 columns">
+              <div class="highlight-value">Dallas, TX</div>
+            </div>
+          </div>
+        </div>
+        <div class="solutions">
+          <div class="row">
+            <div class="large-12 columns">
+              <div class="highlight-value">CrowdStreet MarketPlace</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-12">
+              <div class="highlight-value">CrowdStreet Sponsor Direct</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      <div class="medium-4 large-4 columns">
+      <div class="sponsor-tile">
+        <div class="header-image">
+            <img src="https://crowdstreet-prod.s3.amazonaws.com/media/property-images/Choice1_Tour15_800x450.jpg" class="" height="338">
+          <div class="sponsor-logo">
+            <img src="https://crowdstreet-prod.s3.amazonaws.com/media/sponsor_pics/Trueline-Logo-Square.png">
+          </div>
+        </div>
+        <div class="sponsor-name">
+          <h3>Trueline Capital</h3>
+        </div>
+        <div class="property-type">
+          <span>Office</span>
+        </div>
+        <div class='sponsor-data'>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">Assets Under Management</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">$1,000,000</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">Total Portfolio Activity</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">$3.82B</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">SF Acquired</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">$3.82B</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">Years In Business</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">23 Years</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-4 columns">
+              <div class="highlight">Location</div>
+            </div>
+            <div class="large-8 columns">
+              <div class="highlight-value">Dallas, TX</div>
+            </div>
+          </div>
+        </div>
+        <div class="solutions">
+          <div class="row">
+            <div class="large-12 columns">
+              <div class="highlight-value">CrowdStreet MarketPlace</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-12 columns">
+              <div style="height:19px"class="highlight-value"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    <div class="row">
+    <div class="medium-4 large-4 columns">
+      <div class="sponsor-tile">
+        <div class="header-image">
+            <img src="https://crowdstreet-prod.s3.amazonaws.com/media/property-images/QC-Hotel--Bar_800x450.jpg" class="" height="338">
+          <div class="sponsor-logo">
+            <img src="https://crowdstreet-prod.s3.amazonaws.com/media/sponsor_pics/FOF-Logo-White.png">
+          </div>
+        </div>
+        <div class="sponsor-name">
+          <h3>Mirzam Venture Capital</h3>
+        </div>
+        <div class="property-type">
+          <span>Multifamily</span>
+        </div>
+        <div class='sponsor-data'>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">Assets Under Management</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">$800M</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">Total Portfolio Activity</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">$3.82B</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">SF Acquired</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">$1.98B</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">Years In Business</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">17 Years</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-4 columns">
+              <div class="highlight">Location</div>
+            </div>
+            <div class="large-8 columns">
+              <div class="highlight-value">Dallas, TX</div>
+            </div>
+          </div>
+        </div>
+        <div class="solutions">
+          <div class="row">
+            <div class="large-12 columns">
+              <div class="highlight-value">CrowdStreet MarketPlace</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-12">
+              <div class="highlight-value">CrowdStreet Sponsor Direct</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      <div class="medium-4 large-4 columns">
+      <div class="sponsor-tile">
+        <div class="header-image">
+            <img src="https://crowdstreet-prod.s3.amazonaws.com/media/property-images/490-First-Financing-Request---Debt-3_800x450_a35Ia0T.jpg" class="" height="338">
+          <div class="sponsor-logo">
+            <img src="https://crowdstreet-prod.s3.amazonaws.com/media/sponsor_pics/Vukota-logo-blk_lauj1kq.png">
+          </div>
+        </div>
+        <div class="sponsor-name">
+          <h3>Vukota Capital Management</h3>
+        </div>
+        <div class="property-type">
+          <span>Office</span>
+        </div>
+        <div class='sponsor-data'>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">Assets Under Management</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">$1,000,000</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">Total Portfolio Activity</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">$3.82B</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">SF Acquired</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">$5M+</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">Years In Business</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">66 Years</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-4 columns">
+              <div class="highlight">Location</div>
+            </div>
+            <div class="large-8 columns">
+              <div class="highlight-value">Dallas, TX</div>
+            </div>
+          </div>
+        </div>
+        <div class="solutions">
+          <div class="row">
+            <div class="large-12 columns">
+              <div class="highlight-value">CrowdStreet MarketPlace</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-12">
+              <div class="highlight-value">CrowdStreet Sponsor Direct</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      <div class="medium-4 large-4 columns">
+      <div class="sponsor-tile">
+        <div class="header-image">
+            <img src="https://crowdstreet-prod.s3.amazonaws.com/media/property-images/10thg2_800x450.jpg" class="" height="338">
+          <div class="sponsor-logo">
+            <img src="https://crowdstreet-prod.s3.amazonaws.com/media/sponsor_pics/comunidad_logo_square.png">
+          </div>
+        </div>
+        <div class="sponsor-name">
+          <h3>Comunidad Investment Partners</h3>
+        </div>
+        <div class="property-type">
+          <span>Office</span>
+        </div>
+        <div class='sponsor-data'>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">Assets Under Management</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">$1,000,000</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">Total Portfolio Activity</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">$3.82B</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">SF Acquired</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">$3.82B</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">Years In Business</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">23 Years</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-4 columns">
+              <div class="highlight">Location</div>
+            </div>
+            <div class="large-8 columns">
+              <div class="highlight-value">Dallas, TX</div>
+            </div>
+          </div>
+        </div>
+        <div class="solutions">
+          <div class="row">
+            <div class="large-12 columns">
+              <div class="highlight-value">CrowdStreet MarketPlace</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-12 columns">
+              <div style="height:19px"class="highlight-value"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    <div class="row">
+    <div class="medium-4 large-4 columns">
+      <div class="sponsor-tile">
+        <div class="header-image">
+            <img src="https://crowdstreet-prod.s3.amazonaws.com/media/property-images/QC-Hotel--Bar_800x450.jpg" class="" height="338">
+          <div class="sponsor-logo">
+            <img src="https://crowdstreet-prod.s3.amazonaws.com/media/sponsor_pics/taurus-logo.png">
+          </div>
+        </div>
+        <div class="sponsor-name">
+          <h3>Taurus Real Estate Holdings</h3>
+        </div>
+        <div class="property-type">
+          <span>Multifamily</span>
+        </div>
+        <div class='sponsor-data'>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">Assets Under Management</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">$800M</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">Total Portfolio Activity</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">$3.82B</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">SF Acquired</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">$1.98B</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">Years In Business</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">17 Years</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-4 columns">
+              <div class="highlight">Location</div>
+            </div>
+            <div class="large-8 columns">
+              <div class="highlight-value">Dallas, TX</div>
+            </div>
+          </div>
+        </div>
+        <div class="solutions">
+          <div class="row">
+            <div class="large-12 columns">
+              <div class="highlight-value">CrowdStreet MarketPlace</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-12">
+              <div class="highlight-value">CrowdStreet Sponsor Direct</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      <div class="medium-4 large-4 columns">
+      <div class="sponsor-tile">
+        <div class="header-image">
+            <img src="https://crowdstreet-prod.s3.amazonaws.com/media/property-images/490-First-Financing-Request---Debt-3_800x450_a35Ia0T.jpg" class="" height="338">
+          <div class="sponsor-logo">
+            <img src="https://crowdstreet-prod.s3.amazonaws.com/media/sponsor_pics/Origin-Capital-Square-2.jpg">
+          </div>
+        </div>
+        <div class="sponsor-name">
+          <h3>Origin Investments</h3>
+        </div>
+        <div class="property-type">
+          <span>Office</span>
+        </div>
+        <div class='sponsor-data'>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">Assets Under Management</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">$1,000,000</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">Total Portfolio Activity</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">$3.82B</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">SF Acquired</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">$5M+</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">Years In Business</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">66 Years</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-4 columns">
+              <div class="highlight">Location</div>
+            </div>
+            <div class="large-8 columns">
+              <div class="highlight-value">Dallas, TX</div>
+            </div>
+          </div>
+        </div>
+        <div class="solutions">
+          <div class="row">
+            <div class="large-12 columns">
+              <div class="highlight-value">CrowdStreet MarketPlace</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-12">
+              <div class="highlight-value">CrowdStreet Sponsor Direct</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      <div class="medium-4 large-4 columns">
+      <div class="sponsor-tile">
+        <div class="header-image">
+            <img src="https://crowdstreet-prod.s3.amazonaws.com/media/property-images/10thg2_800x450.jpg" class="" height="338">
+          <div class="sponsor-logo">
+            <img src="https://crowdstreet-prod.s3.amazonaws.com/media/sponsor_pics/Mascia-Logo_Square_Clear.png">
+          </div>
+        </div>
+        <div class="sponsor-name">
+          <h3>Mascia Development, LLC</h3>
+        </div>
+        <div class="property-type">
+          <span>Office</span>
+        </div>
+        <div class='sponsor-data'>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">Assets Under Management</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">$1,000,000</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">Total Portfolio Activity</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">$3.82B</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">SF Acquired</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">$3.82B</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">Years In Business</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">23 Years</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-4 columns">
+              <div class="highlight">Location</div>
+            </div>
+            <div class="large-8 columns">
+              <div class="highlight-value">Dallas, TX</div>
+            </div>
+          </div>
+        </div>
+        <div class="solutions">
+          <div class="row">
+            <div class="large-12 columns">
+              <div class="highlight-value">CrowdStreet MarketPlace</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-12 columns">
+              <div style="height:19px"class="highlight-value"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    <div class="row">
+    <div class="medium-4 large-4 columns">
+      <div class="sponsor-tile">
+        <div class="header-image">
+            <img src="https://crowdstreet-prod.s3.amazonaws.com/media/property-images/QC-Hotel--Bar_800x450.jpg" class="" height="338">
+          <div class="sponsor-logo">
+            <img src="https://crowdstreet-prod.s3.amazonaws.com/media/sponsor_pics/BSP-logo-square.jpg">
+          </div>
+        </div>
+        <div class="sponsor-name">
+          <h3>Brooklyn Standard Properties</h3>
+        </div>
+        <div class="property-type">
+          <span>Multifamily</span>
+        </div>
+        <div class='sponsor-data'>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">Assets Under Management</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">$800M</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">Total Portfolio Activity</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">$3.82B</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">SF Acquired</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">$1.98B</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">Years In Business</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">17 Years</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-4 columns">
+              <div class="highlight">Location</div>
+            </div>
+            <div class="large-8 columns">
+              <div class="highlight-value">Dallas, TX</div>
+            </div>
+          </div>
+        </div>
+        <div class="solutions">
+          <div class="row">
+            <div class="large-12 columns">
+              <div class="highlight-value">CrowdStreet MarketPlace</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-12">
+              <div class="highlight-value">CrowdStreet Sponsor Direct</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      <div class="medium-4 large-4 columns">
+      <div class="sponsor-tile">
+        <div class="header-image">
+            <img src="https://crowdstreet-prod.s3.amazonaws.com/media/property-images/490-First-Financing-Request---Debt-3_800x450_a35Ia0T.jpg" class="" height="338">
+          <div class="sponsor-logo">
+            <img src="https://crowdstreet-prod.s3.amazonaws.com/media/sponsor_pics/Identity-White_Square2.jpg">
+          </div>
+        </div>
+        <div class="sponsor-name">
+          <h3>The SMARTCAP Group</h3>
+        </div>
+        <div class="property-type">
+          <span>Office</span>
+        </div>
+        <div class='sponsor-data'>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">Assets Under Management</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">$1,000,000</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">Total Portfolio Activity</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">$3.82B</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">SF Acquired</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">$5M+</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">Years In Business</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">66 Years</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-4 columns">
+              <div class="highlight">Location</div>
+            </div>
+            <div class="large-8 columns">
+              <div class="highlight-value">Dallas, TX</div>
+            </div>
+          </div>
+        </div>
+        <div class="solutions">
+          <div class="row">
+            <div class="large-12 columns">
+              <div class="highlight-value">CrowdStreet MarketPlace</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-12">
+              <div class="highlight-value">CrowdStreet Sponsor Direct</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      <div class="medium-4 large-4 columns">
+      <div class="sponsor-tile">
+        <div class="header-image">
+            <img src="https://crowdstreet-prod.s3.amazonaws.com/media/property-images/10thg2_800x450.jpg" class="" height="338">
+          <div class="sponsor-logo">
+            <img src="https://crowdstreet-prod.s3.amazonaws.com/media/sponsor_pics/green-visor-logo-blue2.png">
+          </div>
+        </div>
+        <div class="sponsor-name">
+          <h3>Green Visor Capital</h3>
+        </div>
+        <div class="property-type">
+          <span>Office</span>
+        </div>
+        <div class='sponsor-data'>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">Assets Under Management</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">$1,000,000</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">Total Portfolio Activity</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">$3.82B</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">SF Acquired</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">$3.82B</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">Years In Business</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">23 Years</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-4 columns">
+              <div class="highlight">Location</div>
+            </div>
+            <div class="large-8 columns">
+              <div class="highlight-value">Dallas, TX</div>
+            </div>
+          </div>
+        </div>
+        <div class="solutions">
+          <div class="row">
+            <div class="large-12 columns">
+              <div class="highlight-value">CrowdStreet MarketPlace</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-12 columns">
+              <div style="height:19px"class="highlight-value"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    <div class="row">
+    <div class="medium-4 large-4 columns">
+      <div class="sponsor-tile">
+        <div class="header-image">
+            <img src="https://crowdstreet-prod.s3.amazonaws.com/media/property-images/QC-Hotel--Bar_800x450.jpg" class="" height="338">
+          <div class="sponsor-logo">
+            <img src="https://crowdstreet-prod.s3.amazonaws.com/media/sponsor_pics/MMI-Development-Logo_square.jpg">
+          </div>
+        </div>
+        <div class="sponsor-name">
+          <h3>MMI Development</h3>
+        </div>
+        <div class="property-type">
+          <span>Multifamily</span>
+        </div>
+        <div class='sponsor-data'>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">Assets Under Management</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">$800M</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">Total Portfolio Activity</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">$3.82B</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">SF Acquired</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">$1.98B</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">Years In Business</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">17 Years</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-4 columns">
+              <div class="highlight">Location</div>
+            </div>
+            <div class="large-8 columns">
+              <div class="highlight-value">Dallas, TX</div>
+            </div>
+          </div>
+        </div>
+        <div class="solutions">
+          <div class="row">
+            <div class="large-12 columns">
+              <div class="highlight-value">CrowdStreet MarketPlace</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-12">
+              <div class="highlight-value">CrowdStreet Sponsor Direct</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      <div class="medium-4 large-4 columns">
+      <div class="sponsor-tile">
+        <div class="header-image">
+            <img src="https://crowdstreet-prod.s3.amazonaws.com/media/property-images/490-First-Financing-Request---Debt-3_800x450_a35Ia0T.jpg" class="" height="338">
+          <div class="sponsor-logo">
+            <img src="https://crowdstreet-prod.s3.amazonaws.com/media/sponsor_pics/KRI-Logo_square.jpg">
+          </div>
+        </div>
+        <div class="sponsor-name">
+          <h3>KRI Capital Partners</h3>
+        </div>
+        <div class="property-type">
+          <span>Office</span>
+        </div>
+        <div class='sponsor-data'>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">Assets Under Management</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">$1,000,000</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">Total Portfolio Activity</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">$3.82B</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">SF Acquired</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">$5M+</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">Years In Business</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">66 Years</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-4 columns">
+              <div class="highlight">Location</div>
+            </div>
+            <div class="large-8 columns">
+              <div class="highlight-value">Dallas, TX</div>
+            </div>
+          </div>
+        </div>
+        <div class="solutions">
+          <div class="row">
+            <div class="large-12 columns">
+              <div class="highlight-value">CrowdStreet MarketPlace</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-12">
+              <div class="highlight-value">CrowdStreet Sponsor Direct</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      <div class="medium-4 large-4 columns">
+      <div class="sponsor-tile">
+        <div class="header-image">
+            <img src="https://s3-us-west-1.amazonaws.com/crowdstreet-prod/media/property-images/block_fund_waterside.jpg" class="" height="338">
+          <div class="sponsor-logo">
+            <img src="https://crowdstreet-prod.s3.amazonaws.com/media/sponsor_pics/Block-logo-square.png">
+          </div>
+        </div>
+        <div class="sponsor-name">
+          <h3>Block Real Estate Services</h3>
+        </div>
+        <div class="property-type">
+          <span>Multifamily &middot; Office &middot; Retail &middot; Industrial</span>
+        </div>
+        <div class='sponsor-data'>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">Assets Under Management</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">$150M</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">Total Portfolio Activity</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">$3B</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">SF Acquired</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">37.8M</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">Years In Business</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">70 Years</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-4 columns">
+              <div class="highlight">Location</div>
+            </div>
+            <div class="large-8 columns">
+              <div class="highlight-value">Kansas City, MO</div>
+            </div>
+          </div>
+        </div>
+        <div class="solutions">
+          <div class="row">
+            <div class="large-12 columns">
+              <div class="highlight-value">CrowdStreet MarketPlace</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-12 columns">
+              <div style="height:19px"class="highlight-value"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    <div class="row">
+    <div class="medium-4 large-4 columns">
+      <div class="sponsor-tile">
+        <div class="header-image">
+            <img src="https://crowdstreet-prod.s3.amazonaws.com/media/property-images/QC-Hotel--Bar_800x450.jpg" class="" height="338">
+          <div class="sponsor-logo">
+            <img src="https://crowdstreet-prod.s3.amazonaws.com/media/sponsor_pics/flat-web-logo-square.png">
+          </div>
+        </div>
+        <div class="sponsor-name">
+          <h3>A List Partners</h3>
+        </div>
+        <div class="property-type">
+          <span>Multifamily</span>
+        </div>
+        <div class='sponsor-data'>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">Assets Under Management</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">$800M</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">Total Portfolio Activity</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">$3.82B</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">SF Acquired</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">$1.98B</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">Years In Business</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">17 Years</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-4 columns">
+              <div class="highlight">Location</div>
+            </div>
+            <div class="large-8 columns">
+              <div class="highlight-value">Dallas, TX</div>
+            </div>
+          </div>
+        </div>
+        <div class="solutions">
+          <div class="row">
+            <div class="large-12 columns">
+              <div class="highlight-value">CrowdStreet MarketPlace</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-12">
+              <div class="highlight-value">CrowdStreet Sponsor Direct</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      <div class="medium-4 large-4 columns">
+      <div class="sponsor-tile">
+        <div class="header-image">
+            <img src="https://crowdstreet-prod.s3.amazonaws.com/media/property-images/490-First-Financing-Request---Debt-3_800x450_a35Ia0T.jpg" class="" height="338">
+          <div class="sponsor-logo">
+            <img src="https://crowdstreet-prod.s3.amazonaws.com/media/sponsor_pics/Core-Properties-West-logo.jpg">
+          </div>
+        </div>
+        <div class="sponsor-name">
+          <h3>Core Properties West</h3>
+        </div>
+        <div class="property-type">
+          <span>Office</span>
+        </div>
+        <div class='sponsor-data'>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">Assets Under Management</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">$1,000,000</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">Total Portfolio Activity</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">$3.82B</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">SF Acquired</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">$5M+</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">Years In Business</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">66 Years</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-4 columns">
+              <div class="highlight">Location</div>
+            </div>
+            <div class="large-8 columns">
+              <div class="highlight-value">Dallas, TX</div>
+            </div>
+          </div>
+        </div>
+        <div class="solutions">
+          <div class="row">
+            <div class="large-12 columns">
+              <div class="highlight-value">CrowdStreet MarketPlace</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-12">
+              <div class="highlight-value">CrowdStreet Sponsor Direct</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      <div class="medium-4 large-4 columns">
+      <div class="sponsor-tile">
+        <div class="header-image">
+            <img src="https://crowdstreet-prod.s3.amazonaws.com/media/property-images/10thg2_800x450.jpg" class="" height="338">
+          <div class="sponsor-logo">
+            <img src="https://crowdstreet-prod.s3.amazonaws.com/media/sponsor_pics/Core-Properties-West-logo.jpg">
+          </div>
+        </div>
+        <div class="sponsor-name">
+          <h3>Core Properties West</h3>
+        </div>
+        <div class="property-type">
+          <span>Office</span>
+        </div>
+        <div class='sponsor-data'>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">Assets Under Management</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">$1,000,000</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">Total Portfolio Activity</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">$3.82B</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">SF Acquired</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">$3.82B</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-8 columns">
+              <div class="highlight">Years In Business</div>
+            </div>
+            <div class="large-4 columns">
+              <div class="highlight-value">23 Years</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-4 columns">
+              <div class="highlight">Location</div>
+            </div>
+            <div class="large-8 columns">
+              <div class="highlight-value">Dallas, TX</div>
+            </div>
+          </div>
+        </div>
+        <div class="solutions">
+          <div class="row">
+            <div class="large-12 columns">
+              <div class="highlight-value">CrowdStreet MarketPlace</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-12 columns">
+              <div style="height:19px"class="highlight-value"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+</div>
+{% endblock %}
