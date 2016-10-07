@@ -5,4 +5,4 @@ doma-env [name of the machine]
 docker ps
 
 # Copy the file
-docker cp 41d8f5a84cd2:/crowdstreet-src/sponsor_direct_analytics.csv .
+docker cp 41d8f5a84cd2:/crowdstreet-src/offers_export.csv .
