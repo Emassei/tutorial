@@ -23,6 +23,8 @@ with open('sponsor_direct_analytics.csv', 'wb') as csvfile:
         smart_str(u"Total Projects"),
         smart_str(u"Total Investment $ Managed"),
         smart_str(u"Total $ Distributed to investors"),
+        smart_str(u"Total number of investments"),
+        smart_str(u"Total number of investors with >1 investment"),
     ])
     private_portals = PrivatePortal.objects.all()
 
@@ -38,5 +40,6 @@ with open('sponsor_direct_analytics.csv', 'wb') as csvfile:
             smart_str(Property.objects.filter(is_realized=True, sponsor__privateportal=private_portal).count()),
             smart_str(Property.objects.filter(sponsor__privateportal=private_portal).count()),
             smart_str(sum([o.amount_invested for o in Offer.objects.filter(property_obj__sponsor__privateportal=private_portal, stage=100) if o.amount_invested])),
-            smart_str(sum([o.amount for o in Distribution.objects.filter(offer__property_obj__sponsor__privateportal=private_portal) if o.amount])),
+            smart_str(Offer.objects.filter(stage=100,private_portal=private_portal).count()),
+            smart_str(Investor.objects.filter(offer__property_obj__sponsor__privateportal=private_portal) if o.amount])),
         ])
