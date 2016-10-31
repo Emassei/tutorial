@@ -5,7 +5,7 @@ If it says "Cannot connect to the Docker daemon",
 sudo usermod -aG docker ubuntu
 then log out and back in
 
-docker-machine ssh cs-app-sales-20161004
+docker-machine ssh cs-app-production-20161014-a
 docker ps
-docker exec -i -t c285fe3c8557 /bin/bash
+docker exec -i -t 261b99a7753a /bin/bash
 ./manage.py shell_plus
