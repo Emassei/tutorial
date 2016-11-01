@@ -7,5 +7,5 @@ then log out and back in
 
 docker-machine ssh cs-app-production-20161014-a
 docker ps
-docker exec -i -t 261b99a7753a /bin/bash
+docker exec -i -t c8d43a15efdc /bin/bash
 ./manage.py shell_plus

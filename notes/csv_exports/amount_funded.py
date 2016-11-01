@@ -1,5 +1,8 @@
 cont = ContentType.objects.filter(model='offer')
+
+bad_sponsors = [27, 0, 14, 26, 11, 57, 1, 13]
 private_portals = PrivatePortal.objects.all()
+private_portals = private_portals.exclude(id__in=bad_sponsors)
 
 for private_portal in private_portals.iterator():
     ids = []
