@@ -1,0 +1,68 @@
+<nav class="navbar navbar-inverse" role="navigation">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+ <a class="logo" target="_blank" href="http://www.woodbinedevelopment.com/" title="Woodbine Development">
+        <img alt="Woodbine Development" src="https://s3-us-west-2.amazonaws.com/crowdstreet-sponsor-direct-static/woodbine/logo.png">
+      </a>
+    </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav pull-right">
+        {% if not request.private_portal.gate_properties_list or request.user.is_authenticated %}
+          <li id="offerings">
+            <a href="{% url 'properties:properties_list' %}">Offerings</a>
+          </li>
+        {% endif %}
+        {% if request.user.is_authenticated %}
+        <li>
+          {% if transaction_center_action_needed %}
+          <a href="{% url 'properties:my_transactions' %}" title="Your action is required for a transaction">
+            My Transactions
+            <i class="fa fa-exclamation-circle"></i>
+          </a>
+          {% else %}
+          <a href="{% url 'properties:my_transactions' %}">My Transactions</a>
+          {% endif %}
+        </li>
+        <li>
+          <a href="{% url 'properties:my_investments' %}">My Investments</a>
+        </li>
+        {% endif %}
+        {% if request.user.is_authenticated %}
+          <li class="dropdown">
+            <a href="#" data-toggle="dropdown" class="dropdown-toggle">
+              {{ request.user.user_profile.greeting_name }} <b class="caret"></b>
+            </a>
+              <ul class="dropdown-menu dropdown-menu-right">
+                <li><a href="{% url 'accounts:profile_edit_basic' %}">My Account</a></li>
+                {% if request.user.user_profile.is_sponsor or request.user.is_staff %}
+                <li><a href="{% url 'managementportal:manage_index' %}">Management Portal</a></li>
+                {% endif %}
+                {% if tax_documents_found %}
+                  <li>
+                    <a href="{% url 'api_v1:documents:tax_document_download_all' %}">Download all tax documents</a>
+                  </li>
+                {% endif %}
+                <li><a class="user-logout" href="{% url 'accounts:logout' %}">Log out</a></li>
+              </ul>
+          </li>
+        {% else %}
+            <li>
+              {% if request.COOKIES.cs_did_auth %}
+              <a href="{% url 'accounts:auth_login' %}" id="navbar-login">Login</a>
+              {% else %}
+              <a href="{% url 'accounts:registration_register' %}"  id="navbar-signup">Sign Up</a>
+              {% endif %}
+            </li>
+        {% endif %}
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
