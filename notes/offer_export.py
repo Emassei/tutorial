@@ -4,7 +4,7 @@ from datetime import datetime
 from properties.utils import format_amount
 from properties.models import Offer, Property
 
-with open('oct_export_export.csv', 'wb') as csvfile:
+with open('q4_export_export.csv', 'wb') as csvfile:
     writer = csv.writer(csvfile)
     writer.writerow([
         smart_str(u"Offer ID"),
@@ -16,7 +16,7 @@ with open('oct_export_export.csv', 'wb') as csvfile:
         smart_str(u"Owner"),
         smart_str(u"Repeat or new"),
     ])
-    offers = Offer.objects.filter(date_committed__lte=datetime(2016, 10, 31, 1, 1, 1, 1),date_committed__gte=datetime(2016, 10, 1, 1, 1, 1, 1))
+    offers = Offer.objects.filter(date_committed__lte=datetime(2016, 12, 31, 23, 59, 59, 59),date_committed__gte=datetime(2016, 10, 1, 1, 1, 1, 1))
     offers = offers.filter(stage__gte=5)
     offers = offers.filter(user_profile__is_marketplace_investor=True)
     offers.count()
