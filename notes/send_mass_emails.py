@@ -4,12 +4,8 @@ for user_profile in UserProfile.objects.filter(private_portals__isnull=False, of
     try:
         offer = user_profile.investors.first().offers.first()
 
-        message = ("<p>This evening, Wednesday, 2/17 at 8:00PM PST, we will be"
-                   " deploying a scheduled maintenance update that will result"
-                   " in approximately 30 minutes of anticipated downtime"
-                   " during which time the investment portal will be inaccessible.</p>"
-                   "<p>Thank you for your patience during this maintenance period.</p>")
-        subject = "Scheduled Downtime Notice - 2/17 @ 8:00PM PST"
+        message = ("<p>xxx</p>")
+        subject = "xxxx"
         from_email = u'{} <{}>'.format(
             offer.property_obj.sponsor.email_display_name,
             offer.property_obj.sponsor.email_address

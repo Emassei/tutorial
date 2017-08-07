@@ -4,33 +4,21 @@ from datetime import datetime
 from properties.utils import format_amount
 from properties.models import Offer, Property
 
-with open('offers_export2.csv', 'wb') as csvfile:
+with open('hz-entity.csv', 'wb') as csvfile:
     writer = csv.writer(csvfile)
     writer.writerow([
 
         smart_str(u"Email"),
-        smart_str(u"First Name"),
-        smart_str(u"Last Name"),
-        smart_str(u"Phone"),
-        smart_str(u"Street Address"),
-        smart_str(u"City"),
-        smart_str(u"State"),
-        smart_str(u"Zip Code"),
-        smart_str(u"ID")
+        smart_str(u"Investor"),
+
     ])
-    spon = Sponsor.objects.get(slug='twinrock-partners')
-    ou = spon.privateportal.offline_users.all()
-    for o in ou:
+    portal = PrivatePortal.objects.get(sponsor__slug='hamilton-zanze')
+    user_profiles = UserProfile.objects.filter(private_portal=portal,
+                                               date_converted__isnull=False)
+    for user_profile in user_profiles:
         writer.writerow([
-            smart_str(o.email),
-            smart_str(o.first_name),
-            smart_str(o.last_name),
-            smart_str(o.phone),
-            smart_str(o.address),
-            smart_str(o.city),
-            smart_str(o.state),
-            smart_str(o.zip_code),
-            smart_str(o.id)
+            smart_str(user_profile.email),
+            smart_str(user_profile.investors.all()),
         ])
 
 

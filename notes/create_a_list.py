@@ -32,3 +32,47 @@ print(len(b), "number of properties have not "
 print(len(a), "number of properties have "
               "uploaded projected distributions "
               "for ", c)
+
+l=[
+x
+]
+
+
+objs_tuple = [
+    ('ArborCrowd', 42),
+]
+
+# Mapping a tuple to a list
+new_list=[]
+
+for o in l:
+    for title, id in objs_tuple:
+        if o == id:
+            o = title
+            new_list.append(o)
+print(new_list)
+
+
+
+# This counts the number of occurences in a list
+
+from collections import Counter
+
+print(Counter(l))
+
+# Map ocurance number to sponsor name and add to a new list
+
+objs_tuple= (
+    (42, 303),
+
+ )
+
+new_list = []
+for id, occurence in objs_tuple:
+    private_portal = PrivatePortal.objects.get(id=id)
+    new_list.append(private_portal.sponsor.title)
+    new_list.append(occurence)
+    new_list
+print(new_list)
+
+

@@ -4,7 +4,7 @@ from esign.docusign import DocuSignClient
 client = DocuSignClient()
 
 # Grab a document
-doc = DocumentEnvelope.objects.get(envelope_id='c81d71a1-1fea-497e-b48d-6c95125f5f52')
+doc = DocumentEnvelope.objects.get(envelope_id='xxx')
 
 
 # Call some methods!

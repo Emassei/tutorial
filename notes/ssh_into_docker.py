@@ -1,11 +1,12 @@
 If it wont let you in:
-chmod 600 /Users/Crowdstreet/.docker/machine/machines/cs-app-production-20161118-b/id_rsa
-
+chmod 600 /Users/xxx
 If it says "Cannot connect to the Docker daemon", 
-sudo usermod -aG docker ubuntu
+
 then log out and back in
 
-docker-machine ssh cs-app-production-20161118-b
+# Set the variable 
 docker ps
-docker exec -i -t 43416d57646b /bin/bash
+docker exec -i -t xxx /bin/bash
+# or 
+giddyup xxx
 ./manage.py shell_plus
